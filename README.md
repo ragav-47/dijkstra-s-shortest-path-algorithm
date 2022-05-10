@@ -18,7 +18,7 @@ Select a specific number of nodes with distance
 Create a dictionary with all the node pairs (keys) and their respective distances as the values
 
 ### STEP 4: 
-Implement the search algorithm by passing any node and f(node) to find a Best route.
+Implement the search algorithm by passing any node and f(node) to find the Best route.
 
 ### STEP 5: 
 Display the route sequence.
@@ -30,7 +30,7 @@ Display the route sequence.
 ![ alt text for screen readers](./images/map.png "Map around my house")
 
 ## PROGRAM
-```
+```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 import random
@@ -243,8 +243,7 @@ print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
 ![ alt text for screen readers](./images/output.png "OUTPUT")
 
 ## SOLUTION JUSTIFICATION:
-The Algorithm searches all the nodes for the most eligible node, and then it goes into the deep, to find the next eligible node to reach the desired destination.
+The Algorithm searches all the nodes for the most eligible node by choosing with low path cost, and then it goes into the deep, to find the next eligible node to reach the desired destination.
 
 ## RESULT:
 Hence, Best-First-Search Algorithm was implemented for a route finding problem.
-
